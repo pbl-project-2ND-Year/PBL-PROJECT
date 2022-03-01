@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <title>PBL PROJECT</title>
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@600&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <!--favicons-->
+    <link rel="icon" href="favicon_io (4)/favicon-32x32.png" >
+    <!-- BOOTSTRAPCSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- stylecss -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <!-- mapbox -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+   <style type="text/css">
+     #contact
+     {
+       margin-left:20px;
+       margin-right:40px;
+     }
+     .map
+     {
+       margin-left:50px;
+       border-radius:20px;
+       border-style: solid;
+       
+     }
+   </style>
+  </head>
+  <body>
+    <header id="header">
+
+      <!-- navbar -->
+      <section id="nav">
+       <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 fixed-top">
+         <div class="container">
+        <a class="navbar-brand" href="#"><span>Budget</span></a>
+
+           <button class="navbar-toggler  custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+
+           <div class="collapse navbar-collapse" id="navmenu">
+             <ul class="navbar-nav ms-auto">
+               <li class="navbar-item">
+                 <a href="#" class="nav-link colornav active ">Home</a>
+               </li>
+               <li class="navbar-item">
+                 <a href="#ft" class="nav-link colornav">Features</a>
+               </li>
+               <li class="navbar-item">
+                 <a href="#FAQ" class="nav-link colornav">FAQ's</a>
+               </li>
+               <li class="navbar-item">
+                 <a href="#ourteam" class="nav-link colornav">Our Team</a>
+               </li>
+               <li class="navbar-item">
+                 <a href="#contact" class="nav-link colornav">Contact Us</a>
+               </li>
+               <li>
+                 <a href="#" class="btn btn-outline-light " id="loginbtn">Login/SignUp</a>
+               </li>
+             </ul>
+           </div>
+        </div>
+       </nav>
+       </section>
+
+      <!-- header_title -->
+      
+      <section id="banner" class="text-light pt-5 text-center text-md-start">
+        <div class="banner">
+          <div class="container">
+            <div class="row" id="title">
+              <div class="col-lg-6">
+                 <h1>We embrace your dreams of financial growth</h1>
+                  <p class="lead my-4">
+                      Here we are to help you Track expenses that can help you stay on top of your cashflow and
+                      prepare you for tax season.
+                  </p>
+                  <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+                  <!-- <button type="button" class="btn btn-primary"> <a href="#">Primary</a></button> -->
+              </div>
+
+              <!-- banner-image -->
+              <div class="col-md-6">
+                <img src="images/headerimage.svg" class="banner-img img-fluid d-sm-block" alt="banner-image">
+              </div>
+            </div> 
+        </div>
+        </div>
+     
+        <!-- <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L80,181.3C160,203,320,245,480,218.7C640,192,800,96,960,90.7C1120,85,1280,171,1360,213.3L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> -->
+        <!-- <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L80,234.7C160,245,320,267,480,245.3C640,224,800,160,960,144C1120,128,1280,160,1360,176L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> -->
+        <!-- <svg  class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L80,176C160,192,320,224,480,197.3C640,171,800,85,960,69.3C1120,53,1280,107,1360,133.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> -->
+      </section>
+    </header>
+
+    
+    <!-- features -->
+   
+    <div id="bg">
+    <section id="section--1" class="container">
+      <div class="section_title">
+        <h2 class="section_description text-center mb-4" id="ft" >Features</h2>
+        <h3 class="section_header">Everything you need in modern Expenses Tracker and more</h3>
+      </div>
+      
+      <div class=" position-absolute w-50 d-none d-lg-block" style="opacity: 0.1; z-index: -1 ;right: 60%;"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#00ccf7" d="M54,-30.9C67.2,-8.2,73.4,18.9,63.2,31.5C53,44.1,26.5,42.2,2,41.1C-22.5,39.9,-45,39.4,-58.2,25.1C-71.4,10.7,-75.3,-17.5,-64,-39.1C-52.8,-60.6,-26.4,-75.6,-3,-73.8C20.4,-72.1,40.7,-53.7,54,-30.9Z" transform="translate(100 100)" />
+</svg></div>
+
+      <section id="features" class="p-3">
+        <div class="container">
+          <div class="row align-item-center justify-content-betweeen">
+            <div class="col-md">
+              <!-- img1 -->
+              <img src="images/graph-img-removebg-preview.png" id="feature-img" class=" img-fluid " alt="graph-img">
+            </div>
+            <div class="col-md py-5">
+              <!-- icon -->
+              <div class="features_icon">
+               <i class="fas fa-chart-line features-icon fa-3x"></i>
+  
+              </div>
+              
+              <h3 class="features_catchline">Clarity, purity and resonance</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+                dolorum obcaecati incidunt accusamus, voluptatem reprehenderit
+                architecto. Ipsam dolorum sint mollitia expedita at eos, beatae hic
+                repellat nesciunt eius ea culpa!
+              </p>
+            </div>
+          </div>
+      </div>
+       </section>
+      
+        <section id="section--1" class="container">
+      <div class=" position-absolute w-50 d-none d-lg-block" style="opacity: 0.1; z-index: -1 ;left:60%;"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#3577d4" d="M52.7,-21.9C67,-5.8,76.1,21.7,66.5,40.5C56.9,59.4,28.4,69.5,7.8,65C-12.9,60.5,-25.7,41.4,-37.9,21.1C-50,0.8,-61.4,-20.6,-55,-32.2C-48.5,-43.8,-24.3,-45.5,-2.5,-44C19.3,-42.6,38.5,-38,52.7,-21.9Z" transform="translate(100 100)" />
+</svg></div>
+      <section id="features" class="p-3">
+        <div class="container"></div>
+          <div class="row align-item-center justify-content-betweeen">
+            <div class="col-md py-5 ">
+              <!-- icon -->
+              <div class="features_icon">
+                  <i class="fas fa-wallet features-icon fa-3x"></i>
+              </div>
+              <h3 class=" features_catchline">Transcations</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+                dolorum obcaecati incidunt accusamus, voluptatem reprehenderit
+                architecto. Ipsam dolorum sint mollitia expedita at eos, beatae hic
+                repellat nesciunt eius ea culpa!
+              </p>
+            </div>
+            <div class="col-md">
+              <!-- img2 -->
+            <img src="images/transcation-img-removebg-preview.png" id="feature-img" class=" img-fluid " alt="transcation-img">
+            </div>
+          </div>
+      </div>
+      </section>
+
+      <section id="features" class="p-3">
+        <div class="container">
+          <div class="row align-item-center justify-content-betweeen">
+            <div class="col-md">
+                <!-- img3 -->
+                <img src="images/report-img-removebg-preview.png" id="feature-img" class=" img-fluid  "alt="reports-img">
+            </div>
+            <div class="col-md py-5 ">
+              <!-- icon -->
+              <div class="features_icon">
+               <i class="fas fa-copy features-icon fa-3x"></i>
+              </div>
+              <h3 class=" features_catchline">Know the past, plan the future</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+                dolorum obcaecati incidunt accusamus, voluptatem reprehenderit
+                architecto. Ipsam dolorum sint mollitia expedita at eos, beatae hic
+                repellat nesciunt eius ea culpa!
+              </p>
+            </div>
+          </div>
+      </div>
+       </section>
+    </section>
+    
+  </div>
+
+  
+
+    <!-- video -->
+    <section id="video" class="p-5 ">
+      <div class="container"></div>
+      <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum dolor earum vitae officiis itaque ducimus, culpa deserunt recusandae blanditiis voluptas qui alias iure inventore beatae adipisci vel numquam quibusdam? Ut.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam enim magni ab temporibus? Sed magnam mollitia eveniet quae distinctio esse delectus quo odit eum! Repudiandae id veritatis asperiores nobis iste!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolorem autem voluptatibus, tenetur laborum similique in culpa voluptas quibusdam quas itaque nostrum eius ab officiis perferendis tempore rerum minima quisquam.
+      </p>
+
+    </section>
+
+
+    <!--FAQ's -->
+   
+    <section id="FAQ">
+      <div class="container-fluid py-2">
+        <h2 class="section_description text-center mb-4">  Frequently Asked Questions </h2>
+    <div class="accordion accordion-flush" id="question">
+  <div class="accordion-item">
+    <!-- item1 -->
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  <!-- item2 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+    </div>
+  </div>
+  <!-- item3 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" >
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" >
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    </div>
+   </div>
+</div>
+
+    </div>
+    </section>
+
+    
+
+    <!-- Our Team -->
+   <section id="ourteam">
+     <div class="ourcontainer">
+        <h2 class="section_description text-center mb-4" id="ourteamheading">  OUR TEAM </h2>
+       <input type="radio" name="dot" id="one">
+       <input type="radio" name="dot" id="two">
+
+       <div class="main-card">
+         <div class="cards">
+           <div class="card">
+             <div class="content">
+               <div class="img">
+                 <img src="images/christopher-campbell-rDEOVtE7vOs-unsplash.jpg" alt="ppl1">
+               </div>
+               <div class="details">
+                 <div class="name">Saakshi Salunke</div>
+                 <div class="job">SYCOB-25</div>
+               </div>
+               <div class="media-icons">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                 <a href="#"><i class="fab fa-github"></i></a>
+               </div>
+             </div>
+           </div>
+
+           <div class="card">
+             <div class="content">
+               <div class="img">
+                 <img src="images/haley-lawrence-xrF0-5Ve5nU-unsplash.jpg" alt="ppl1">
+               </div>
+               <div class="details">
+                 <div class="name">Vaidehi Pawar</div>
+                 <div class="job">SYCOB-15</div>
+               </div>
+               <div class="media-icons">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                 <a href="#"><i class="fab fa-github"></i></a>
+               </div>
+             </div>
+           </div>
+
+           <div class="card">
+             <div class="content">
+               <div class="img">
+                 <img src="images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="ppl1">
+               </div>
+               <div class="details">
+                 <div class="name">Gayatri Satpute </div>
+                 <div class="job">SYCOB-29</div>
+               </div>
+               <div class="media-icons">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                 <a href="#"><i class="fab fa-github"></i></a>
+               </div>
+             </div>
+           </div>
+          </div>
+
+          <div class="cards">
+           <div class="card">
+             <div class="content">
+               <div class="img">
+                 <img src="images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" alt="ppl1">
+               </div>
+               <div class="details">
+                 <div class="name">Darshan Rathod</div>
+                 <div class="job">SYCOB-24</div>
+               </div>
+               <div class="media-icons">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                 <a href="#"><i class="fab fa-github"></i></a>
+               </div>
+             </div>
+           </div>
+
+           <div class="card">
+             <div class="content">
+               <div class="img">
+                 <img src="images/vicky-hladynets-uyaTT9u6AvI-unsplash.jpg" alt="ppl1">
+               </div>
+               <div class="details">
+                 <div class="name">Vedant Angane</div>
+                 <div class="job">SYCOB-02</div>
+               </div>
+               <div class="media-icons">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                 <a href="#"><i class="fab fa-github"></i></a>
+               </div>
+             </div>
+           </div>
+
+           <div class="card">
+             <div class="content">
+               <div class="img">
+                 <img src="images/albert-dera-ILip77SbmOE-unsplash.jpg" alt="ppl1">
+               </div>
+               <div class="details">
+                 <div class="name">Dheeraj Salunkhe</div>
+                 <div class="job">SYCOB-26</div>
+               </div>
+               <div class="media-icons">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                 <a href="#"><i class="fab fa-github"></i></a>
+               </div>
+             </div>
+           </div>
+          </div>
+       </div>
+
+       <!-- slide button -->
+       <div class="slidebutton">
+         <label for="one" class="one active"></label>
+          <label for="two" class="two"></label>
+       </div>
+     </div>
+   </section>
+
+<!-- contact us -->
+<section class="contact p-5" id ="contact" width="100%">
+  <div class="container" width="1400px">
+    <div class="row g-8">
+      <table colspan="20px">
+      <tr>
+        <td>
+      <div class="col-md" id ="contact" width="300px" >
+        <h2 class="section_description text-center mb-4" > Contact Info</h2>
+        <ul class="list-group list-group-flush lead">
+          <li class="list-group-item">
+
+            <span class="fw-bold" >  Main Location : </span> Plot No. B, Sector no. 110,Gate no.1; Laxminagar,
+             <br/>Ravet,Haveli, Pune - 412101
+          </li>
+          <li class="list-group-item">
+          
+            <span class="fw-bold"> Contact : </span> 9876543210/1234567890
+          </li>
+             <li class="list-group-item">
+           
+            <span class="fw-bold"> Mail : </span><a href="mailto:pccoer.ravet@gmail.com" >pccoer.ravet@gmail.com</a>
+                 </li>  
+          
+        </div>
+      </td>
+      <div >
+      <td class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.2882126620693!2d73.74282821483011!3d18.65105838733311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9f949b8961d567ce!2zMTjCsDM5JzAzLjgiTiA3M8KwNDQnNDIuMSJF!5e0!3m2!1sen!2sin!4v1646038116010!5m2!1sen!2sin" width="800" height="300" style="border:5px;" allowfullscreen="" loading="lazy"></iframe>
+        
+      </td>
+    </div>
+      </tr>
+
+      </table>
+
+         
+        </ul>
+      </div>
+
+      <!-- map -->
+      <div class="col-md">
+          <div id="map"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- NEWLETTER SUBSCRIPTION
+     <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best day to join Bankist was one year ago. The second best is
+          today!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Open your free account today!</button>
+    </section> -->
+
+
+
+    
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+      <p  class="footer-line"> Feedback | Help | Terms | Privacy | Advertise |</p>
+      <p class=" copyw">© Copyright 2022 Team | All Rights Reserved</p>
+
+      </footer>
+
+
+     
+
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="0.8" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,181.3C1120,203,1280,213,1360,218.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> -->
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="0.8" d="M0,192L60,208C120,224,240,256,360,240C480,224,600,160,720,144C840,128,960,160,1080,170.7C1200,181,1320,171,1380,165.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg> -->
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="0.8" d="M0,64L80,80C160,96,320,128,480,133.3C640,139,800,117,960,133.3C1120,149,1280,203,1360,229.3L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> -->
+
+
+
+   <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <!-- mapbox -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+       <!-- <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoidmFpZGVoaTYxMyIsImEiOiJja3l1Ync2aXcxbThyMndvM3dlNWNoMmM2In0.R6KncWGgKu_pqsO1Xpb7zA';
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [18.6510584,73.7450169],
+      zoom:18,
+      });
+     </script>  -->
+
+      <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+      <script src="script.js"></script>
+  </body>
+</html>
