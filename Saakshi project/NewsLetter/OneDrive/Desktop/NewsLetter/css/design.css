@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.comcss2?family=Ubuntu:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: rgba(0, 37, 107, 0.973);
+    height: 100vh;
+    display: flex ;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes text{
+    0%{
+        width: 0ch;
+    }
+    25%{
+        width: 8ch;
+    }
+}
+.newsletter{
+    background: linear-gradient(125deg,#002dff,#f8a5c2);
+    width: 700px;
+    height: 500px;
+    padding: 70px;
+    text-align: center;
+    box-shadow: 0 0 20px #00000000;
+    border: 5px;
+    border-radius: 50px;
+    border-color: black;
+    border-style: groove;
+}
+
+.newsletter h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 50px;
+    line-height: 40px;
+}
+.newsletter h1 span{
+    display: block;
+    font-size: 40px;
+    margin-top: 50px;
+
+}
+.newsletter p{
+    color: #fff;
+    font-size: 17px;
+    margin: 40px 0;
+}
+.txtbox{
+    width: 100%;
+    height: 62px;
+    background: #f1f1f199;
+    border-radius: 40px;
+    position: sticky;
+    margin-top:70px;
+}
+.txtbox input{
+    width: 100%;
+    height:60px;
+    border-radius: 40px;
+    border:0;
+    background: none;
+    padding: 0 30px;
+    outline: none;
+    font-size: 15px;
+    
+}
+.txtbox button{
+    background: #3a7bd5;
+    border:50;
+    width:50px;
+    height: 50px;
+    border-radius:50%;
+    position:absolute;
+    right:10px;
+    top:5px;
+    outline:none;
+    cursor:pointer;
+    color:#fff;
+    transition:0.3s linear;
+}
+.txtbox button:hover{
+    opacity: .5;
+} 
+
+
